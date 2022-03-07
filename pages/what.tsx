@@ -1,5 +1,5 @@
-import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
 
 export default function What() {
-  return <Sidebar></Sidebar>;
+  return <Layout title="What"></Layout>;
 }

@@ -1,5 +1,5 @@
-import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
 
 export default function Company() {
-  return <Sidebar></Sidebar>;
+  return <Layout title="Company"></Layout>;
 }

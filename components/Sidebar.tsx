@@ -18,7 +18,8 @@ import { SearchIcon } from "@heroicons/react/solid";
 import Layout from "../components/Layout";
 
 const navigation = [
-  { name: "Dashboard", href: "/dash-board", icon: HomeIcon, current: true },
+  { name: "About", href: "/about", icon: HomeIcon, current: true },
+  { name: "Dashboard", href: "/dash-board", icon: HomeIcon, current: false },
   { name: "Company", href: "/company", icon: UsersIcon, current: false },
   { name: "Why", href: "/why", icon: FolderIcon, current: false },
   { name: "How", href: "/how", icon: CalendarIcon, current: false },
