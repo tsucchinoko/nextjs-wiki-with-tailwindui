@@ -1,13 +1,5 @@
-import Head from "next/head";
-import Layout from "../components/Layout";
+import Sidebar from "../components/Sidebar";
 
 export default function Dashboard() {
-  return (
-    <div>
-      <Head>
-        <title>自己紹介タイトル</title>
-        <meta name="description" content="自己紹介概要" />
-      </Head>
-    </div>
-  );
+  return <Sidebar></Sidebar>;
 }
