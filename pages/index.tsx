@@ -1,6 +1,6 @@
-import Sidebar from "../components/Sidebar";
+import Layout from "../components/Layout";
 
 // それを型指定として使う
 export default function Home() {
-  return <Sidebar></Sidebar>;
+  return <Layout></Layout>;
 }

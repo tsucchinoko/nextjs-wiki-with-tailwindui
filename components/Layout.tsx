@@ -18,6 +18,7 @@ import { SearchIcon } from "@heroicons/react/solid";
 
 const navigation = [
   { name: "About", href: "/about", icon: HomeIcon, current: true },
+  { name: "Article", href: "/articles", icon: HomeIcon, current: false },
   { name: "Dashboard", href: "/dash-board", icon: HomeIcon, current: false },
   { name: "Company", href: "/company", icon: UsersIcon, current: false },
   { name: "Why", href: "/why", icon: FolderIcon, current: false },
@@ -75,21 +76,6 @@ export default function Layout({ title }: Props) {
           </div>
         </div>
       </div>
-
-      <main>
-        <div className="py-6">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            <h1 className="text-2xl font-semibold text-gray-900">{title}</h1>
-          </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            {/* Replace with your content */}
-            <div className="py-4">
-              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
-            </div>
-            {/* /End replace */}
-          </div>
-        </div>
-      </main>
     </div>
   );
 }
