@@ -4,28 +4,26 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
-  BellIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  FolderIcon,
   HomeIcon,
-  InboxIcon,
-  MenuAlt2Icon,
   UsersIcon,
-  XIcon,
+  PencilIcon,
+  QuestionMarkCircleIcon,
+  LightBulbIcon,
+  ClipboardCheckIcon,
+  HeartIcon,
+  SparklesIcon,
 } from "@heroicons/react/outline";
 import { SearchIcon } from "@heroicons/react/solid";
 
 const navigation = [
   { name: "About", href: "/about", icon: HomeIcon, current: true },
-  { name: "Article", href: "/articles", icon: HomeIcon, current: false },
-  { name: "Dashboard", href: "/dash-board", icon: HomeIcon, current: false },
+  { name: "Article", href: "/articles", icon: PencilIcon, current: false },
   { name: "Company", href: "/company", icon: UsersIcon, current: false },
-  { name: "Why", href: "/why", icon: FolderIcon, current: false },
-  { name: "How", href: "/how", icon: CalendarIcon, current: false },
-  { name: "What", href: "/what", icon: InboxIcon, current: false },
-  { name: "Like", href: "/like", icon: ChartBarIcon, current: false },
-  { name: "Can", href: "/can", icon: ChartBarIcon, current: false },
+  { name: "Why", href: "/why", icon: QuestionMarkCircleIcon, current: false },
+  { name: "How", href: "/how", icon: LightBulbIcon, current: false },
+  { name: "What", href: "/what", icon: ClipboardCheckIcon, current: false },
+  { name: "Like", href: "/like", icon: HeartIcon, current: false },
+  { name: "Can", href: "/can", icon: SparklesIcon, current: false },
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },
