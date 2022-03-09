@@ -9,6 +9,12 @@ type Props = {
 };
 
 export default function Article({ article }: Props) {
+  var body!: HTMLDivElement;
+  if (typeof document !== "undefined") {
+    body = document.createElement("div");
+    body.append(article.body);
+  }
+
   return (
     <div>
       <Layout title="記事詳細"></Layout>
@@ -36,7 +42,7 @@ export default function Article({ article }: Props) {
             )}
             <div className="mt-2">
               <div className="text-2xl text-gray-700 mt-4 rounded ">
-                {article.body}
+                {<div dangerouslySetInnerHTML={{ __html: article.body }} />}
               </div>
             </div>
           </div>
