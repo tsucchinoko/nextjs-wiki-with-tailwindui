@@ -31,7 +31,7 @@ export default function About({ articles }: Props) {
                   height={300}
                 />
                 <div className="px-6 py-4">
-                  <Link href={`/article/${article.id}`} passHref>
+                  <Link href={`/articles/${article.id}`} passHref>
                     <a>{article.title}</a>
                   </Link>
                 </div>
